@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+.j-heading {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.j-main-container {
+  max-width: 720px;
+  text-align: center;
+  padding: 40px;
+  margin: auto;
+  background: white;
+}
+
+.j-logo {
+  width: 120px;
+  margin-bottom: 24px;
+}
+
+.j-instruction {
+  margin: 0 0 24px;
+}
+
+.j-payid {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.j-payid .j-icon {
+  margin-left: 24px;
+  line-height: 0;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.j-payid .j-icon img {
+  width: 24px;
+}
+
+.j-list-table {
+  list-style: none;
+  border: 1px solid grey;
+  padding-inline: 0;
+  padding: 24px;
+}
+
+.j-list-table .j-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.j-list-table .j-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.j-list-table .j-item .field {
+  font-weight: bold;
+}
+
+.j-list-table .j-item .value {
+  /* font-size: 18px; */
+}
+
+.j-list-table .j-item .value.total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.j-button {
+  margin-top: 24px;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: black;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+}
+
+.j-note {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .j-main-container {
+    padding: 16px;
+  }
+
+  .j-list-table {
+    padding: 16px;
+  }
+  .j-payid {
+    padding: 16px;
+  }
+}
